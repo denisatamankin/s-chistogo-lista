@@ -1,0 +1,141 @@
+:root {
+    --white: #FFF;
+    --black: #1e1e1e;
+    --grey: #343434;
+    --yellow: #FEE42A;
+    --white-text: #F5F5F5;
+    --grey-text: #CCC;
+    --black-main: #131313;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400;
+    color: var(--white-text);
+    background-color: var(--black);
+}
+
+.content-section{
+    box-sizing: border-box;
+    inline-size: 360px;
+    margin: auto;
+} 
+
+.content-section_theme_dark {
+    color: var(--white-text);
+    background-color: var(--black-main);
+}
+
+.content-section_theme_bright {
+    color: var(--black-main);
+    background-color: var(--yellow);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 24px 20px;
+}
+
+.header__logo {
+    display: block;
+    inline-size: 78px;
+}
+
+.header__logo-image {
+    inline-size: 100%;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.header__menu-item_active .header__menu-link {
+    text-decoration: none;
+}
+
+.header__menu-link {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.cover {
+    min-block-size: 221px;
+    padding: 7px 24px 32px 20px;
+    background-image: url(../images/cover.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 95% auto;
+}
+
+.accent-span {
+    display: block;
+    color: var(--white);
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.intro {
+    padding: 0 20px 38px;
+}
+
+.intro__heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    color: var(--grey-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;  
+}
+
+.intro__title {
+    color: var(--grey-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2; 
+}
+
+.intro__date {
+    white-space: nowrap;
+}
+
+.intro__main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block-start: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;    
+}
+
+.reasons {
+    padding: 40px 20px;
+}
+
+.how-to {
+    padding: 40px 20px 60px;
+}
+
+.footer {
+    padding: 20px;
+}
