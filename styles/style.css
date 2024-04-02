@@ -76,13 +76,16 @@ body {
     background-size: 95% auto;
 }
 
-.accent-span {
-    display: block;
+.cover__title {
     color: var(--white);
     font-family: "EB Garamond", serif;
     font-weight: 400;
     font-size: 72px;
-    line-height: 1;    
+    line-height: 1;
+}
+
+.accent-span {
+    display: block;        
 }
 
 .text-center {
@@ -132,10 +135,111 @@ body {
     padding: 40px 20px;
 }
 
+.content-section__subtitle {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.15;
+}
+
+.content-section__introduction {
+    margin-block: 32px;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.content-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 1.35;
+    padding-inline-start: 16px;
+}
+
+.content-section__list-accent {
+    font-weight: 700;
+}
+
 .how-to {
     padding: 40px 20px 60px;
 }
 
+.cards-list {
+    list-style: none;
+}
+
+.card {
+    margin-block-start: 32px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card_theme_dark {
+    background-color: var(--grey);
+}
+
+.card_theme_bright {
+    background-color: var(--yellow);
+    color: var(--black-main);
+}
+
+.card__author {
+    margin: 0 0 8px auto;
+}
+
+.card__author-photo {
+    inline-size: 100px;
+    block-size: 100px;
+    margin-block-end: 7px;
+}
+
+.card__author-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__title {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
 .footer {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-block-start: 1px solid var(--yellow);
+}
+
+.footer__copy {
+    line-height: 1.35;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style: none;    
+}
+
+.footer__links-item {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25;
+    text-decoration: none;
 }
